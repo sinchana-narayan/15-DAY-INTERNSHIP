@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinchana Narayan</title>
+    <meta name="description" content="This is my personal website.">
+    <meta name="keywords" content="personal, website, portfolio, Sinchana N">
+
+    <!-- open graph for whatsapp, facebook, linkedin -->
+     <meta property="og:title" content="Sinchana Narayan">
+     <meta property="og:description" content="Check out my projects here!">
+     <meta property="og:type" content="website">
+
+     <!-- twitter card -->
+     <meta name="twitter:card" content="large_image">
+     <meta name="twitter:title" content="Sinchana Narayan">
+     <meta name="twitter:description" content="Check out my projects here!">
+     <link rel="shortcut icon" type="image/x-icon" href="../logo.jpg">
+     <link rel="stylesheet" href="style.css">
+
+     <!-- font styling in css -->
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bricolage+Grotesque:opsz@12..96&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Pacifico&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+</style>
+</style>
+</head>
+<body>
+
+    <!-- header + navigation -->
+     <header class="site-header">
+        <nav class="navbar">
+            <img src="../logo-removebg-preview.png" width="70">
+            <ul class="nav-links">
+                <li><a href="#about" class="btn">About</a></li>
+                <li><a href="#skills" class="btn">Skills</a></li>
+                <li><a href="#projects" class="btn">Projects</a></li>
+                <li><a href="#contact" class="btn">Contact</a></li>
+            </ul>
+            <button class="theme-toggle">
+                ❤️ 
+            </button>
+        </nav>
+     </header>
+
+     <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="">
+            <h1 class="hero-content">Hello, Sinchana here!</h1>
+            <p class="tagline">I'm an aspiring scientist, with a passion for technology and discovery.</p>
+            <div class="hero-buttons">
+                <a href="" class="btn btn-primary">View my resume</a>
+                <a href="" class="btn btn-secondary">Contact me</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <figure class="profile-figure">
+                    <img src="../profile pic- no bg.png" height="600" width="300" alt="Profile Picture">
+                    <figcaption>Sinchana Narayan, aspiring scientist.</figcaption>   
+                </figure>
+                <div class="about-text">
+                    <p>"Research has always been a subjet that has had me keen to learn, and keep learning regardless of what my qualification says I'm specialised in. As a B.tech in Mathematics and Computing graduate, with xyz years of experience and xyz published research papers, all I wish to do is to use my learning not only to build new things, but to connect it with the universe's principles and learn along. Welcome to this part of the internet, that tells about me and my work - without telling too much. Hope to connect with you soon!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+         <section class="skills-section" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Python (Beginner)</div>
+                <div class="skill-item">HTML
+                <div class="skill-item">NumPy</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">C Programming (basics)</div>
+            </div>
+        </section>
+
+        <!-- PROJECT SECTION -->
+        <section class="project-section" id="projects">
+            <h2>My projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="../weather app.jpg" width="320" height="350" alt="Project 1">
+                    <h3>The Weather App</h3>
+                    <p>An app that indicates weather changes with closely 90% accuracy, and helps schedule plans with a built in calendar.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <a href="" class="btn">Live demo</a>
+                    <br>
+                    <a href="" class="btn">GitHub</a>
+                </article>
+            </div>
+        </section>
+
+      <!-- contact section -->
+        <section class="contact-section" id="contact">
+            <h2>Contact Me</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span class="footer-year"></span>Sinchana Narayan</p>
+        <nav>
+            <a href="https://github.com/sinchana-narayan" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/sinchana-narayan-b0132a412/" target="_blank">LinkedIn</a>
+        </nav>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
