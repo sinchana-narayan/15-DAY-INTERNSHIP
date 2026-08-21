@@ -3,24 +3,34 @@ if(footerYear){
     footerYear.textContent=new Date().getFullYear();
 }
 
-//theme toggle
-let themebtn= document.querySelector(".theme-toggle");
+// THEME TOGGLE
+const themeButton = document.querySelector(".theme-toggle");
 
-//since we dont have backend to store down items, everything is going to be stored in the browsers storage called the localstorage
-localStorage.setItem("theme","light");
-if (localStorage.getItem("theme")==="light"){
+if (themeButton) {
+
+    // ALWAYS START IN LIGHT MODE
     document.body.classList.add("light-theme");
-    themebtn.textContent = "❤️";
-}else{
-    themebtn.textContent="💔";
+    themeButton.textContent = "🌞";
+
+
+    // =========================================
+    // TOGGLE THEME
+    // =========================================
+
+    themeButton.addEventListener("click", function () {
+
+        document.body.classList.toggle("light-theme");
+
+        if (document.body.classList.contains("light-theme")) {
+
+            themeButton.textContent = "🌞";
+
+        } else {
+
+            themeButton.textContent = "🌙";
+
+        }
+
+    });
+
 }
-themebtn.addEventListener("click",function(){
-    document.body.classList.toggle("light-theme");
-    if(document.body.classList.contains("light-theme")){
-        themebtn.textContent="❤️";
-    }else{
-        themebtn.textContent="💔";
-        localStorage.setItem("theme","dark");
-    }
-    
-});
